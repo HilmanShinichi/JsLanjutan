@@ -101,9 +101,6 @@ const mobil = new Promise((resolve, reject) => {
    
 })
 
-Promise.all([motor, mobil])
-.then(response => console.log(response)) // menangani jika kondisi true
-.catch(error => console.log(error)); // Menangani error jika terjadi
 // motor
 // .then(response => console.log(response))
 // .catch(response => console.log(response))
@@ -111,13 +108,14 @@ Promise.all([motor, mobil])
 // .then(response => console.log(response))
 // .catch(response => console.log(response))
 
-
-
-
-
-// .then(response => {
-//     const [motor, mobil] = response.text();
-    
+// Promise.all([motor, mobil])
+// .then((response) => {
+//   const [motor, mobil] = response;
+//   console.log(motor);
+//   console.log(mobil);
 // })
-// .then(respontext => console.log(motor);
-// console.log(mobil))
+// .catch((response) => {
+//   const [motor, mobil] = response;
+//   console.log(response)
+//   console.log(response)
+// })
